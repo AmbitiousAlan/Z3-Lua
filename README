@@ -1,1 +1,3 @@
-Not comprehensive. But you can use this as template. Just share a few files with chatgpt and ask him to generate a wrapper for the_function_you_want_to_use. 
+Not comprehensive. But you can use this as template. Just share a few files with chatgpt and ask him to generate a wrapper for the_function_you_want_to_use.
+
+Either add libz3.so to the z3 folder or `sudo apt install libz3-dev` 
