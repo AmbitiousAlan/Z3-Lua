@@ -1,1 +1,1 @@
-LUA_CPATH="../build/?.so;;" lua test1.lua
+LUA_CPATH="../build/?.so;;" lua test2.lua

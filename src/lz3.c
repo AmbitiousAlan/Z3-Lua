@@ -17,17 +17,29 @@
 #include "lz3_mk_false.c"
 #include "lz3_mk_true.c"
 #include "lz3_mk_app.c"
+#include "lz3_mk_eq.c"
+#include "lz3_solver_assert.c"
+#include "lz3_mk_forall_const.c"
+#include "lz3_solver_push.c"
+#include "lz3_solver_pop.c"
+#include "lz3_solver_check.c"
 
 static const luaL_Reg lz3_ctx_methods[] = {
     {"close",               lz3_context_close},               // context.c
     {"uninterpreted_sort",  lz3_context_uninterpreted_sort},  // uninterpreted_sort.c
     {"bool_sort",           lz3_context_bool_sort},           // bool_sort.c
     {"const",               lz3_context_const},               // lz3_const.c
-    {"mk_func_decl",           lz3_context_mk_func_decl},     // lz3_mk_func_decl.c
-    {"mk_solver",              lz3_context_mk_solver},        // lz3_mk_solver.c  
-    {"mk_false",               lz3_context_mk_false},         // lz3_mk_false.c  
-    {"mk_true",                lz3_context_mk_true},          // lz3_mk_true.c 
-    {"mk_app",                 lz3_context_mk_app},           // lz3_mk_app.c 
+    {"mk_func_decl",        lz3_context_mk_func_decl},        // lz3_mk_func_decl.c
+    {"mk_solver",           lz3_context_mk_solver},           // lz3_mk_solver.c  
+    {"mk_false",            lz3_context_mk_false},            // lz3_mk_false.c  
+    {"mk_true",             lz3_context_mk_true},             // lz3_mk_true.c 
+    {"mk_app",              lz3_context_mk_app},              // lz3_mk_app.c 
+    {"mk_eq",               lz3_context_mk_eq},               // lz3_mk_eq.c 
+    {"solver_assert",       lz3_context_solver_assert},       // lz3_solver_assert.c 
+    {"mk_forall_const",     lz3_context_mk_forall_const},     // lz3_mk_forall_const.c 
+    {"solver_push",         lz3_context_solver_push},         // lz3_solver_push.c 
+    {"solver_pop",          lz3_context_solver_pop},          // lz3_solver_pop.c 
+    {"solver_check",        lz3_context_solver_check},        // lz3_solver_check.c 
     {NULL, NULL}
 };
 
